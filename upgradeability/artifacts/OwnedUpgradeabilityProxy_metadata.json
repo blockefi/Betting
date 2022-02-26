@@ -1,0 +1,235 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "ProxyOwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "implementation",
+						"type": "address"
+					}
+				],
+				"name": "Upgraded",
+				"type": "event"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "implementation",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "impl",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maintenance",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "_maintenance",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "proxyOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "_maintenance",
+						"type": "bool"
+					}
+				],
+				"name": "setMaintenance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferProxyOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newImplementation",
+						"type": "address"
+					}
+				],
+				"name": "upgradeTo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newImplementation",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "upgradeToAndCall",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"details": "This contract combines an upgradeability proxy with basic authorization control functionalities",
+			"events": {
+				"ProxyOwnershipTransferred(address,address)": {
+					"details": "Event to show ownership has been transferred",
+					"params": {
+						"newOwner": "representing the address of the new owner",
+						"previousOwner": "representing the address of the previous owner"
+					}
+				},
+				"Upgraded(address)": {
+					"details": "This event will be emitted every time the implementation gets upgraded",
+					"params": {
+						"implementation": "representing the address of the upgraded implementation"
+					}
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "the constructor sets the original owner of the contract to the sender account."
+				},
+				"implementation()": {
+					"details": "Tells the address of the current implementation",
+					"returns": {
+						"impl": "address of the current implementation"
+					}
+				},
+				"maintenance()": {
+					"details": "Tells if contract is on maintenance",
+					"returns": {
+						"_maintenance": "if contract is on maintenance"
+					}
+				},
+				"proxyOwner()": {
+					"details": "Tells the address of the owner",
+					"returns": {
+						"owner": "the address of the owner"
+					}
+				},
+				"setMaintenance(bool)": {
+					"details": "Sets if contract is on maintenance"
+				},
+				"transferProxyOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"newOwner": "The address to transfer ownership to."
+					}
+				}
+			},
+			"title": "OwnedUpgradeabilityProxy",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"inverse/contracts/upgradeability/OwnedUpgradeabilityProxy.sol": "OwnedUpgradeabilityProxy"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"inverse/contracts/upgradeability/OwnedUpgradeabilityProxy.sol": {
+			"keccak256": "0xd593defb43f4a516b57dcb8ed8fc74f0c93f8ea2ba6800cb61a2aab2ab5bc5e7",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://1222879cac70aacb6c49df7277dc0eccf9ffff3a7c8634400dd752d3fc8c7b18",
+				"dweb:/ipfs/QmU3RazuFPAbFXbHpvdcHaA9uQuqVF1UuR77o9SxTWWHwB"
+			]
+		}
+	},
+	"version": 1
+}

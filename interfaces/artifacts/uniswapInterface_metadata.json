@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amountIn",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address[]",
+						"name": "path",
+						"type": "address[]"
+					}
+				],
+				"name": "getAmountsOut",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "amounts",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"inverse/contracts/interfaces/UniswapInterface.sol": "uniswapInterface"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"inverse/contracts/interfaces/UniswapInterface.sol": {
+			"keccak256": "0xb9c70fc019ab81f1f5a978a08842ac5c746b65da9171185dd3a5787b78abfbc8",
+			"license": "UNLICENCED",
+			"urls": [
+				"bzz-raw://709c773c1d50812aa76af0aa54cb26b2a157600f42aceb2936a44f326ba413e6",
+				"dweb:/ipfs/QmQrQNy3Hn8CcwHbXYKQDHnodPZwhLhNBZkyew8oFGzfL1"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,280 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "UniswapV2Router02",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "coin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "oracleAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint96",
+						"name": "oracleType",
+						"type": "uint96"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_coinAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "pair",
+						"type": "address"
+					}
+				],
+				"name": "getPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_UniswapV2Router02",
+						"type": "address"
+					}
+				],
+				"name": "initializeOracle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_coinAddress",
+						"type": "address"
+					}
+				],
+				"name": "removeCoin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_coinAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_oracleAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint96",
+						"name": "_oracleType",
+						"type": "uint96"
+					}
+				],
+				"name": "setOracleAddresses",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_UniswapV2Router02",
+						"type": "address"
+					}
+				],
+				"name": "updateUniswapV2Router02",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Tells the address of the owner",
+					"returns": {
+						"_0": "the address of the owner"
+					}
+				},
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"newOwner": "The address to transfer ownership to."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"inverse/contracts/OracleWrapper.sol": "OracleWrapper"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0x90565a39ae45c80f0468dc96c7b20d0afc3055f344c8203a0c9258239f350b9f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://26e8b38a7ac8e7b4463af00cf7fff1bf48ae9875765bf4f7751e100124d0bc8c",
+				"dweb:/ipfs/QmWcsmkVr24xmmjfnBQZoemFniXjj3vwT78Cz6uqZW1Hux"
+			]
+		},
+		"inverse/contracts/OracleWrapper.sol": {
+			"keccak256": "0xd4213bae64aa83100bdc1732a53c54b74fb1adc6d68b76e725e2bd594cddd2e2",
+			"license": "UNLICENCED",
+			"urls": [
+				"bzz-raw://70d873124c2f40cb43d660e8ad109270766d24c3cd039d9ae77b1b172bfdbfaf",
+				"dweb:/ipfs/QmZUziNN8NjTFrHVLECQY2ZZXyzRgCoDW4wvVXrTmnHGvK"
+			]
+		},
+		"inverse/contracts/interfaces/Oracleinterface.sol": {
+			"keccak256": "0x8d86c7572cb0894267df745fba7cb5cb028ef44f3552bfea4e6040e9f71489fd",
+			"license": "UNLICENCED",
+			"urls": [
+				"bzz-raw://7c43a9d98864c8890a915972e33ffb17adbf0005bbc1a4be36fb21f5ea6b6b21",
+				"dweb:/ipfs/QmP8a9FJZxNsvcz2RUGkTBdxUwegLG8g1kGqjoy8nA6y2f"
+			]
+		},
+		"inverse/contracts/interfaces/TellorInterface.sol": {
+			"keccak256": "0x756dce56c8ebb87480d2cb8608c21762691f61d5bdb7c2ed6edeb8e934246022",
+			"license": "UNLICENCED",
+			"urls": [
+				"bzz-raw://c8aec8afed60d53bd696716a853edae46131c62ce236ad635c9f943d0293e486",
+				"dweb:/ipfs/QmSGai7vNDacoQAZssDgDUFkizVGgadJskrXAx1MSmvu3n"
+			]
+		},
+		"inverse/contracts/interfaces/TokenDecimalsInterface.sol": {
+			"keccak256": "0xc0c10f7d24e3e0fee35a941638d210098ce5193198a3531a8708663ce594efba",
+			"license": "UNLICENCED",
+			"urls": [
+				"bzz-raw://3d5225ae7fe2198ce19ea168aa06e2363e754e5a6940789f05782ddc01aff8a9",
+				"dweb:/ipfs/QmUTKjXgNDQdFewBgmwp9663V2AZAKWCuhXjZPoWVww8Ry"
+			]
+		},
+		"inverse/contracts/interfaces/UniswapInterface.sol": {
+			"keccak256": "0xb9c70fc019ab81f1f5a978a08842ac5c746b65da9171185dd3a5787b78abfbc8",
+			"license": "UNLICENCED",
+			"urls": [
+				"bzz-raw://709c773c1d50812aa76af0aa54cb26b2a157600f42aceb2936a44f326ba413e6",
+				"dweb:/ipfs/QmQrQNy3Hn8CcwHbXYKQDHnodPZwhLhNBZkyew8oFGzfL1"
+			]
+		},
+		"inverse/contracts/upgradeability/CustomOwnable.sol": {
+			"keccak256": "0x673aea9554a4b109138acb3dd945e3dd591d2ef0140d763ba36c7369bb9ea840",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://592d279ec7d42eafbd2ea0a26fcd0bdb98a98445a1d1f459969056c421bccba9",
+				"dweb:/ipfs/QmYaPYNRr9ACpsHuJvcYfPHXGbi2yubLhCfWCp5SHbYepr"
+			]
+		}
+	},
+	"version": 1
+}

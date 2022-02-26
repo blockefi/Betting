@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_requestId",
+						"type": "uint256"
+					}
+				],
+				"name": "getLastNewValueById",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"inverse/contracts/interfaces/TellorInterface.sol": "tellorInterface"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"inverse/contracts/interfaces/TellorInterface.sol": {
+			"keccak256": "0x756dce56c8ebb87480d2cb8608c21762691f61d5bdb7c2ed6edeb8e934246022",
+			"license": "UNLICENCED",
+			"urls": [
+				"bzz-raw://c8aec8afed60d53bd696716a853edae46131c62ce236ad635c9f943d0293e486",
+				"dweb:/ipfs/QmSGai7vNDacoQAZssDgDUFkizVGgadJskrXAx1MSmvu3n"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "latestAnswer",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"inverse/contracts/interfaces/IOracleWrapper.sol": "IO"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"inverse/contracts/interfaces/IOracleWrapper.sol": {
+			"keccak256": "0xff70488d948bcb25834c3c32342c3b4956418f633246de183322c8d4e156b78b",
+			"license": "UNLICENCED",
+			"urls": [
+				"bzz-raw://7211d6411e0017f57351c9143f9ea84bc989429e4c023d625c8c199b3169a248",
+				"dweb:/ipfs/QmcFvm1viM3YSbE7DZLZ3nbPT9hZpb2a1NmJqK9q3eBhVA"
+			]
+		}
+	},
+	"version": 1
+}

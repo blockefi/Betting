@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"inverse/contracts/libraries/BettingLibrary.sol": "BettingLibrary"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"inverse/contracts/libraries/BettingLibrary.sol": {
+			"keccak256": "0x3fe4cb6ef3ae4bd22721b2e368353643ebd9fa2d4858b088db64a37160c777a7",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://be6808b36310a881a507eebfe8b007e8fdea37bd11210d2cdd43a7be0bba21e4",
+				"dweb:/ipfs/QmcfaV1UThL2bdcAufPHjeS5zA3Bc12UmoqTNq4NCRyeon"
+			]
+		}
+	},
+	"version": 1
+}

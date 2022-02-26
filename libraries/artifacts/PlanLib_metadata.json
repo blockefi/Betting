@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"inverse/contracts/libraries/PlanLibrary.sol": "PlanLib"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"inverse/contracts/libraries/PlanLibrary.sol": {
+			"keccak256": "0x6d39d00d219d866264b4de86b01c4e9720a46be12368e23720e6147b18cee568",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://a3c4d49dc25e4b75711eca5adf336b9e8b0f6541fb498b65ce41fd12e9f4ba8e",
+				"dweb:/ipfs/QmP9Q2FNL2DWV9RDPjtVEEuLRB5aztDuMdHQdCqRo3jTJU"
+			]
+		}
+	},
+	"version": 1
+}

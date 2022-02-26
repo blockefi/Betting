@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/TokenDecimalsInterface.sol": "TokenDecimalsInterface"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/TokenDecimalsInterface.sol": {
+			"keccak256": "0xe793ea61412aef1ffa661ba1da3eac746dc734f698c31354fd7dcc0d1bf00a08",
+			"license": "UNLICENCED",
+			"urls": [
+				"bzz-raw://ed82bcbfb775c6c70ad30503a86bac4cc65232d8cc39c1b2db5c3b51e0f2bc1f",
+				"dweb:/ipfs/QmXKE27BV5Qphc3Y6qviPHbeGFJRjuvTdULSFu7oGEEaMS"
+			]
+		}
+	},
+	"version": 1
+}
